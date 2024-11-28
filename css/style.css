@@ -1,29 +1,59 @@
+/* Estilo general del header */
 header {
-    background-color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
+    background-color: #1c1f26; /* Fondo oscuro */
+    padding: 1rem 0; /* Espaciado superior e inferior */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente todo el contenido */
 }
 
-header .logo {
-    height: 50px;
+/* Estilo del título */
+header h1 {
+    color: #e4c27a; /* Color dorado */
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center; /* Asegura que el texto esté centrado */
 }
 
-header .menu {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+/* Subtítulo del h1 */
+header h1 span {
+    display: block;
+    font-size: 0.8rem;
+    color: #e4c27a;
+    margin-top: 0.3rem;
+}
+
+
+nav {
+    margin-top: 1rem; /* Espaciado entre el título y el menú */
+    width: 100%; /* El menú ocupa todo el ancho disponible */
+}
+
+.menu {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Usamos flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente los ítems */
+    gap: 2rem; /* Espaciado entre los ítems */
     margin: 0;
     padding: 0;
 }
 
-header .menu li a {
-    text-decoration: none;
-    color: #06184d;
-    font-weight: bold;
+/* Estilo de los links del menú */
+.menu li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #e4c27a; /* Color dorado */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Efecto de transición */
 }
+
+.menu li a:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el cursor */
+}
+
+
+
+
+
 
 .hero {
     text-align: center;
