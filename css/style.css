@@ -55,22 +55,22 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 2px; /* Espaciado para el efecto */
-    background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); /* Degradado con más colores */
-    background-size: 300%; /* Amplía el degradado para hacerlo más suave */
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); /* Máscara */
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); /* Compatibilidad */
+    border-radius: 20px; 
+    padding: 2px; 
+    background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
+    background-size: 300%; 
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); 
     mask-composite: exclude;
     -webkit-mask-composite: destination-out;
-    transition: opacity 0.3s ease, background-position 0.5s ease; /* Suavidad en la transición */
-    background-position: 0% 50%; /* Ajuste inicial del degradado */
-    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease, background-position 0.5s ease; 
+    background-position: 0% 50%; 
+    opacity: 0;
 }
 
 .menu li:hover::before {
-    opacity: 1; /* Muestra el borde en hover */
-    background-position: 100% 50%; /* Anima el degradado para moverse */
+    opacity: 1; 
+    background-position: 100% 50%; 
 }
 
 
