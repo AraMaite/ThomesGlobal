@@ -1,8 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
 header {
-    background-color: #1c1f26; 
+    background-color: #273037; 
     padding: 1rem 0;
 }
 
+/*NAV*/
 .container-header {
     display: flex;
     align-items: center;
@@ -12,20 +26,22 @@ header {
 
 .logo {
     height: 50px; 
+    padding-left: 25px;
 }
 
 nav {
     flex: 1;
     display: flex;
     justify-content: center;
+    padding: 1.5rem;
 }
 
 .menu {
     list-style: none; 
-    padding: 0;
+    padding-right: 200px;
     margin: 0;
     display: flex; 
-    gap: 30px; 
+    gap: 2.5rem; 
 }
 
 .menu li {
@@ -36,8 +52,9 @@ nav {
 .menu li a {
     text-decoration: none; 
     color: #ffffff; 
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2rem; 
-    font-weight: bold; 
+    font-weight:500; 
     padding: 0.5rem 1rem; 
     display: inline-block;
     transition: color 0.3s ease;
@@ -73,75 +90,149 @@ nav {
     background-position: 100% 50%; 
 }
 
+/*DEBAJO DEL NAV*/
 
-.hero {
-    text-align: center;
-    margin-top: 2rem;
+/* IMAGEN DE FONDO*/
+.imagen-blanca-con-lineas {
+    position: relative;
+    width: 100%;
+    height: auto; 
 }
+
+.imagen-blanca-con-lineas img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    position: relative;
+}
+
+/*CONTENIDO*/
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-top: 100px;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center; 
+    color: white;
+}
+
+/*RECUADRO IZQUIERDO*/
 .background-azul {
-    background-color: #06184d;
-    color: #fff;
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    background-color: #273037; 
+    padding: 1.5rem;
+    margin-bottom: 130px;
+    max-width: 50%; 
+    height: 380px;
 }
+
+.background-azul h2{
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.4rem;
+    font-weight:200;
+    background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    
+}
+.background-azul p {
+    color: whitesmoke;
+    font-size: 1.27rem;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 15px;
+
+}
+
+/*RECUADRO DERECHO*/
 .recuadro-blanco {
     background-color: #fff;
-    margin: -3rem auto 2rem;
-    padding: 3rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-width: 600px;
+    padding: 2rem;
     text-align: center;
-    position: relative;
-    z-index: 1;
+    max-width: 50%; 
+    width: 100%; 
+    flex: 1; 
 }
+
 .recuadro-blanco .logo-dorado {
-    height: 80px;
+    width: 400px; 
     margin-bottom: 1rem;
 }
+
 .recuadro-blanco p {
-    color: #555;
+    color: #555; 
     font-size: 1rem;
     line-height: 1.6;
 }
+
+/*RECUADROS AZULES*/
 .recuadros-inferiores {
-    display: flex;
+    position: absolute; 
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex; 
     justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 200px;
+    z-index: 2; 
 }
+
 .recuadro-azul {
-    background-color: #06184d;
-    color: #fff;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.section-blue {
-    background-color: #00509e; 
+    background-color: #161920;
     color: white;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem; 
+    font-weight:20px;
     text-align: center;
-    position: relative;
+    padding: 1.3rem;
+    flex: 1;
+    max-width: 300px;
 }
 
-.text-content p {
-    font-size: 18px;
-    margin: 10px 0;
-    line-height: 1.5;
+.recuadro-azul p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
 }
+
+/* "CRECER EN DUBAI" */
+.recuadro-inferior {
+    position: absolute; 
+    bottom: -8.5rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    height: 300px; 
+    background-color: #273037; 
+    z-index: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: whitesmoke; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem; 
+    text-align: center; 
+}
+
+.recuadro-inferior h2 {
+    margin-top: 5rem;
+    margin-bottom: 2rem; 
+    font-size: 3rem; 
+    font-weight: bold;
+}
+
+.recuadro-inferior p {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    max-width: 80%; 
+}
+
+
+/*HASTA ACA MODIFIQUE*/
+
 
 .city-image {
     position: relative;
