@@ -23,6 +23,7 @@ header {
 .logo {
     height: 50px; 
     padding-left: 25px;
+    max-width: 300px;
 }
 nav {
     flex: 1;
