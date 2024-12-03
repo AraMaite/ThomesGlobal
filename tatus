@@ -1,0 +1,83 @@
+[33mcommit e32b10f80637ecf3092ef678e84e367256fe85c0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrama-mati[m[33m)[m
+Merge: d31f7ea 8485cff
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Mon Dec 2 22:55:30 2024 -0300
+
+    Merge remote-tracking branch 'origin/master' into rama-mati
+
+[33mcommit 8485cff3603be6c9b28d60fc5b8416e27d3d301d[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AraMaite <toloza.maite@hotmail.com>
+Date:   Mon Dec 2 20:23:53 2024 -0300
+
+    lunes
+
+[33mcommit d31f7eaf1dc7cab4c47c6ab1da389838a7851073[m
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Sun Dec 1 01:15:56 2024 -0300
+
+    terminado el inicio de la pagina
+
+[33mcommit 91502a0ee46226559b92c6c04f9b3b5ebfa17d48[m
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Sat Nov 30 16:09:55 2024 -0300
+
+    ajustes de color en el hover
+
+[33mcommit da4fada16ecca34556f7d4e6479815de35846ce3[m
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Sat Nov 30 16:08:26 2024 -0300
+
+    ajustes en los colores del hover
+
+[33mcommit 635f9caf56d5bdcd7073e757894eb9669e6cc7ad[m
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Sat Nov 30 15:09:28 2024 -0300
+
+    nav terminado, se pueden hacer ajustes todavia
+
+[33mcommit 744f4764f111b1fd2f37d912f7d55d66e3b84b5f[m
+Merge: 96c47dc e6fe541
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Thu Nov 28 17:11:05 2024 -0300
+
+    resueltos los conflictos
+
+[33mcommit 96c47dced15e685f033f0d46b28aebd906ead9ba[m
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Thu Nov 28 17:00:56 2024 -0300
+
+    cambios locales
+    
+    ,
+    .
+
+[33mcommit e6fe541f798493c16e5e6ce141711b774efc5113[m
+Author: AraMaite <toloza.maite@hotmail.com>
+Date:   Tue Nov 26 19:13:46 2024 -0300
+
+    martes 26
+
+[33mcommit 06b5e55186391f07810b1e672089bd98a11ec25b[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: 3b24c7a 768ec3b
+Author: AraMaite <toloza.maite@hotmail.com>
+Date:   Mon Nov 25 21:53:02 2024 -0300
+
+    lv
+
+[33mcommit 3b24c7a3c0ca7e5193b4679e8f52e3cb8e58f732[m
+Author: AraMaite <toloza.maite@hotmail.com>
+Date:   Mon Nov 25 21:48:55 2024 -0300
+
+    lunes 25 de nov
+
+[33mcommit 768ec3bcf27ebc233cc2c8cfe742cec66fe703e5[m
+Author: MatiasVelardez <matiasezequielv4@gmail.com>
+Date:   Mon Nov 25 21:29:46 2024 -0300
+
+    creacion de carpetas y subida de imagenes
+
+[33mcommit d5f252a38b5059e08f54482857cd10ad615bc1bd[m
+Author: AraMaite <toloza.maite@hotmail.com>
+Date:   Sat Nov 23 22:16:59 2024 -0300
+
+    primer commit
