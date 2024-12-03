@@ -3,19 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-
 header {
     background-color: #273037; 
     padding: 1rem 0;
 }
-
 /*NAV*/
 .container-header {
     display: flex;
@@ -23,19 +20,16 @@ header {
     justify-content: space-between; 
     padding: 0 15px;
 }
-
 .logo {
     height: 50px; 
     padding-left: 25px;
 }
-
 nav {
     flex: 1;
     display: flex;
     justify-content: center;
     padding: 1.5rem;
 }
-
 .menu {
     list-style: none; 
     padding-right: 200px;
@@ -43,12 +37,10 @@ nav {
     display: flex; 
     gap: 2.5rem; 
 }
-
 .menu li {
     display: inline-block;
     position: relative; 
 }
-
 .menu li a {
     text-decoration: none; 
     color: #ffffff; 
@@ -59,12 +51,9 @@ nav {
     display: inline-block;
     transition: color 0.3s ease;
 }
-
 .menu li a:hover {
     color: #f0c26c; 
 }
-
-
 .menu li::before {
     content: ""; 
     position: absolute;
@@ -84,28 +73,23 @@ nav {
     background-position: 0% 50%; 
     opacity: 0;
 }
-
 .menu li:hover::before {
     opacity: 1; 
     background-position: 100% 50%; 
 }
-
 /*DEBAJO DEL NAV*/
-
-/* IMAGEN DE FONDO*/
+/*IMAGEN DE FONDO*/
 .imagen-blanca-con-lineas {
     position: relative;
     width: 100%;
     height: auto; 
 }
-
 .imagen-blanca-con-lineas img {
     width: 100%; 
     height: auto; 
     object-fit: cover;
     position: relative;
 }
-
 /*CONTENIDO*/
 .hero-content {
     position: absolute;
@@ -119,7 +103,6 @@ nav {
     align-items: center; 
     color: white;
 }
-
 /*RECUADRO IZQUIERDO*/
 .background-azul {
     background-color: #273037; 
@@ -128,7 +111,6 @@ nav {
     max-width: 50%; 
     height: 380px;
 }
-
 .background-azul h2{
     font-family: "Libre Baskerville", serif;
     font-size: 2.4rem;
@@ -137,16 +119,13 @@ nav {
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent; 
-    
 }
 .background-azul p {
     color: whitesmoke;
     font-size: 1.27rem;
     font-family: "Montserrat", sans-serif;
     padding-top: 15px;
-
 }
-
 /*RECUADRO DERECHO*/
 .recuadro-blanco {
     background-color: #fff;
@@ -156,18 +135,15 @@ nav {
     width: 100%; 
     flex: 1; 
 }
-
 .recuadro-blanco .logo-dorado {
     width: 400px; 
     margin-bottom: 1rem;
 }
-
 .recuadro-blanco p {
     color: #555; 
     font-size: 1rem;
     line-height: 1.6;
 }
-
 /*RECUADROS AZULES*/
 .recuadros-inferiores {
     position: absolute; 
@@ -179,7 +155,6 @@ nav {
     gap: 200px;
     z-index: 2; 
 }
-
 .recuadro-azul {
     background-color: #161920;
     color: white;
@@ -191,12 +166,10 @@ nav {
     flex: 1;
     max-width: 300px;
 }
-
 .recuadro-azul p{
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
-
 /* "CRECER EN DUBAI" */
 .recuadro-inferior {
     position: absolute; 
@@ -216,209 +189,295 @@ nav {
     font-size: 1.2rem; 
     text-align: center; 
 }
-
 .recuadro-inferior h2 {
     margin-top: 5rem;
     margin-bottom: 2rem; 
     font-size: 3rem; 
     font-weight: bold;
 }
-
 .recuadro-inferior p {
     font-size: 1.2rem; 
     line-height: 1.5; 
     max-width: 80%; 
 }
-
-
-/*HASTA ACA MODIFIQUE*/
-
-
+/*DOBLE IMAGEN DE DUBAI*/
 .city-image {
     position: relative;
-    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 136px auto;/*no tocar se super pone con lo de arriba*/
 }
-
 .city-image .background {
     width: 100%;
     height: auto;
-    max-width: 600px;
-    border-radius: 10px;
 }
-
-.circle-image {
+.city-image::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5);  
+    z-index: 1; 
+}
+.city-image .circle-image {
     position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 300px; 
+    height: 300px;
+    border-radius: 100%;
     overflow: hidden;
-    border: 4px solid white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.circle-image img {
-    width: 100%;
+.city-image .circle-image img {
+    width: auto;
     height: 100%;
     object-fit: cover;
+    border-radius: 80%;
 }
-
 .info-box {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    position: relative;
+    background-color: #444;
     padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 60px; /* Ajuste para evitar que el círculo se sobreponga */
-}
-.button:hover { background-color: rgba(255, 255, 255, 0.3); 
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 .buttons {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 .button {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    text-align: center;
-    flex: 1;
-    min-width: 150px; /* Asegura que los botones tengan un tamaño mínimo */
+}
+.buttons a:hover {
+    color: #ffffff; 
 }
 .button img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+    width: 50px; 
+    height: auto;
+    margin-bottom: 10px;
 }
-
 .button p {
+    font-size: 1em;
     margin: 0;
-    font-size: 14px;
+    color: #333;
 }
 /* Sección Promocional */
 .promo-section {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    background: url("/images/edificioUno.png") no-repeat center center;
+    background-size: cover;
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
 }
-.promo-image {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-}
-.promo-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-.promo-text {
-    flex: 2;
-    padding: 20px;
-}
-.promo-text h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
-}
-.promo-text p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-}
-/* Sección de NEWS */
-.news-bg {
+.promo-section::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-.news-bg .bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
-.news-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    z-index: 1;
 }
-.news-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.promo-image {
+    flex: 1; 
+    max-width: 50%;
+    margin-right: 20px;
+    z-index: 2;
+    position: relative;
 }
-.news-content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-.news-articles {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.article {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    margin: 10px;
-    overflow: hidden;
-    width: 300px;
-}
-.article img {
+.promo-image img {
     width: 100%;
     height: auto;
 }
-.article p {
-    padding: 10px;
+.promo-text {
+    flex: 1;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    color: white;
 }
-@media (max-width: 768px) {
-    .news-articles {
-        flex-direction: column;
-    }
-
-    .article {
-        width: 100%;
-        margin: 10px 0;
-    }
+.promo-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: white;
 }
-/* Sección de Preguntas Frecuentes */
-.faq {
-    background-color: #fff;
-    padding: 20px;
+/* Sección de NEWS */
+.news-section {
+    position: relative;
+    padding: 60px 20px; /* Ajusta el padding según sea necesario */
+    background: url('/images/edificioDos.png') no-repeat center center; /* Imagen de fondo */
+    background-size: cover; /* Cubre toda la sección */
+    color: white; /* Color del texto para contraste */
 }
-.faq h2 {
+.news-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para legibilidad */
+    z-index: 1; /* Posiciona el overlay sobre la imagen de fondo */
+}
+.titulo {
+    display: flex;
+    flex-direction:row; 
+    justify-content: left;
+    align-items: center;
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
     text-align: center;
+    color: white; /* Color del texto */
+}
+.logodorado {
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto;
+    margin-bottom: 5px; /* Espacio entre el logo y el título */
+}
+.titulo h1 {
+    font-size: 1em;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+.news-section h1, .news-section p, 
+.news-section .news-articles, .news-section .article {
+    position: relative;
+    z-index: 2; 
+}
+.news-section .article img {
+    width: 100%;
+    height: auto;
+}
+.news-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.article {
+    position: relative;
+    background:#f0c26c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+    max-width: 300px; 
+    text-align: center;
+}
+.article img {
+    position: relative;
+    left: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.rectangle { 
+    position: absolute; 
+    bottom: -10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    height: 100px; 
+    background-color: #d4af37; 
+    z-index: -1; 
+}
+.article p {
+    padding: 15px;
+    font-size: 1em;
     color: #333;
+    position: relative;
+}
+.article:hover {
+    transform: translateY(-10px);
+}
+
+/* Sección de Preguntas FAQ´S */
+.faq {
+    padding: 40px 20px;
+    color: #ffffff; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 1200px;
+    margin: 20px auto; /* Centra la sección horizontalmente */
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* Color del título */
+}
+.faq p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.faq-grid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 .faq-item {
-    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .faq-item h3 {
-    color: #333;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
-.faq-item p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
+.faq-item button {
+    background-color: #080808; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-/* Estilos del footer */
+.faq-item button:hover {
+    background-color: #f0c26c; /* Color del botón al pasar el ratón */
+}
+@media (max-width: 768px) { 
+    .faq-grid { 
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */ } 
+} 
+@media (max-width: 480px) {
+    .faq-grid { 
+    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */ }
+}
+    /* FOOTER */
 footer {
     background-color: #333;
     color: white;
@@ -479,18 +538,4 @@ footer {
 }
 .footer-bottom p {
     margin: 0;
-}
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-column {
-        flex: none;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
 }
