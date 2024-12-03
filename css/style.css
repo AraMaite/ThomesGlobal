@@ -275,11 +275,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: background-color 0.3s ease; /* Transición suave */
+    transition: background-color 0.3s ease; 
 }
 .button:hover {
-    background-color: #ffffffa4; /* Cambia el color de fondo a blanco */
-    color: #000000; /* Cambia el color del texto si lo deseas */
+    background-color: #ffffffa4;
+    color: #000000; 
 }
 .button img {
     width: 40px; 
@@ -341,10 +341,10 @@ nav {
 /* Sección de NEWS */
 .news-section {
     position: relative;
-    padding: 60px 20px; /* Ajusta el padding según sea necesario */
-    background: url('/images/edificioDos.png') no-repeat center center; /* Imagen de fondo */
-    background-size: cover; /* Cubre toda la sección */
-    color: white; /* Color del texto para contraste */
+    padding: 60px 20px; 
+    background: url('/images/edificioDos.png') no-repeat center center;
+    background-size: cover; 
+    color: white; 
 }
 .news-section::before {
     content: '';
@@ -353,22 +353,22 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para legibilidad */
-    z-index: 1; /* Posiciona el overlay sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 .titulo {
     display: flex;
     flex-direction:row; 
     justify-content: left;
     align-items: center;
-    padding: 40px 20px; /* Espaciado alrededor de la sección */
+    padding: 40px 20px; 
     text-align: center;
-    color: white; /* Color del texto */
+    color: white; 
 }
 .logodorado {
-    max-width: 100px; /* Tamaño máximo del logo */
+    max-width: 100px; 
     height: auto;
-    margin-bottom: 5px; /* Espacio entre el logo y el título */
+    margin-bottom: 5px;
 }
 .titulo h1 {
     font-size: 1em;
@@ -431,17 +431,17 @@ nav {
 /* Sección de Preguntas FAQ´S */
 .faq {
     padding: 40px 20px;
-    color: #ffffff; /* Color del texto */
-    border-radius: 10px; /* Bordes redondeados */
+    color: #ffffff; 
+    border-radius: 10px; 
     max-width: 1200px;
-    margin: 20px auto; /* Centra la sección horizontalmente */
+    margin: 20px auto;
 }
 
 .faq h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center;
-    color: #ffffff; /* Color del título */
+    color: #ffffff; 
 }
 .faq p {
     font-size: 1.1em;
@@ -450,42 +450,47 @@ nav {
     text-align: center;
 }
 .faq-grid {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 .faq-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent; 
+    border-radius: 10px; 
     padding: 20px;
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
+    text-align: left; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, border-color 0.3s;
+}
+.faq-item:hover {
+    border-color: #f0c26c;
+    transform: scale(1.05); 
 }
 .faq-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 .faq-item button {
-    background-color: #080808; /* Color del botón */
-    color: #fff;
+    align-self: flex-start; 
+    background-color: #000000; 
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 0.9rem;
     transition: background-color 0.3s;
 }
 .faq-item button:hover {
-    background-color: #f0c26c; /* Color del botón al pasar el ratón */
-}
-@media (max-width: 768px) { 
-    .faq-grid { 
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */ } 
-} 
-@media (max-width: 480px) {
-    .faq-grid { 
-    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */ }
+    background-color: #f0c26c; 
 }
     /* FOOTER */
 footer {
@@ -495,10 +500,31 @@ footer {
 }
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.footer-logo { 
+    display: flex; 
+    align-items: center; 
+    margin-right: auto; 
+} 
+.footer-logo img { 
+    max-width: 200px;  
+    height: auto;
+    margin-right: 10px; 
+}
+.footer-logo p span {
+    margin: 0;
+} 
+.footer-logo p { 
+    font-size: 1.2em
+}
+.footer-logo span {
+    font-size: 0.9em;
+    color: #999;
 }
 .footer-column {
     flex: 1;
@@ -522,21 +548,23 @@ footer {
     color: white;
 }
 .footer-bottom {
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #222;
     color: #ccc;
     border-top: 1px solid #444;
 }
 .footer-bottom .footer-logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: auto;
 }
 .footer-bottom .footer-logo img {
     max-width: 100px;
     height: auto;
+    margin-right: 10px;
 }
 .footer-bottom .footer-logo p {
     margin: 5px 0;
@@ -546,6 +574,6 @@ footer {
     font-size: 0.9em;
     color: #999;
 }
-.footer-bottom p {
-    margin: 0;
+.footer-bottom p { 
+    margin-left: auto;
 }
