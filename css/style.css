@@ -417,6 +417,7 @@ nav {
 .article:hover {
     transform: translateY(-10px);
 }
+
 /* Sección de Preguntas FAQ´S */
 .faq-grid {
     display: grid;
