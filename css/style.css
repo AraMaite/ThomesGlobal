@@ -330,44 +330,30 @@ nav {
 .news-section {
     position: relative;
     padding: 60px 20px; 
-    background: url('/images/edificioDos.png') no-repeat center center;
-    background-size: cover; 
+    background: url('/images/edificioDos.png') no-repeat center top;
+    background-size: 150%; 
     color: white; 
 }
-.news-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
-}
-.titulo {
-    display: flex;
-    flex-direction:row; 
-    justify-content: left;
-    align-items: center;
-    padding: 40px 20px; 
-    text-align: center;
-    color: white; 
-}
-.logodorado {
-    max-width: 100px; 
-    height: auto;
-    margin-bottom: 5px;
-}
-.titulo h1 {
-    font-size: 1em;
-    margin: 0;
-    color: white;
-    text-transform: uppercase;
-}
-.news-section h1, .news-section p, 
-.news-section .news-articles, .news-section .article {
+.logonews {
     position: relative;
+    width: 200px; 
+    height: auto; 
+    margin-bottom: 20px;
+}
+.news-section h1 {
+    font-size: 3em; 
+    font-weight: bold;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 20px;
     z-index: 2; 
+    position: relative;
+}
+.news-section p {
+    font-size: 1.7em; 
+    text-align: justify; 
+    z-index: 2; 
+    position: relative;
 }
 .news-section .article img {
     width: 100%;
@@ -381,21 +367,31 @@ nav {
     padding: 40px 20px;
 }
 .article {
-    position: relative;
-    background:#f0c26c;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease; 
-    max-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para destacar el contenido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
     text-align: center;
 }
+
 .article img {
-    position: relative;
-    left: 10px;
     width: 100%;
-    height: auto;
-    display: block;
+    max-width: 300px; /* Ajusta este tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
+
+.article p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #333; /* Color de texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
 .rectangle { 
     position: absolute; 
     bottom: -10px; 
@@ -465,6 +461,13 @@ nav {
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 15px;
+}
+.faq-answer {
+    margin-top: 10px;
+    display: none; /* Oculta inicialmente */
+}
+.faq-item.open .faq-answer {
+    display: block; /* Muestra la respuesta cuando se expande */
 }
 .faq-item button {
     align-self: flex-start; 
