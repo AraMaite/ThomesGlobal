@@ -372,24 +372,24 @@ nav {
     align-items: center;
     margin: 20px;
     padding: 20px;
-    background-color: #ffffff; /* Fondo blanco para destacar el contenido */
+    background-color: #ffffff; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: center;
 }
 
 .article img {
     width: 100%;
-    max-width: 300px; /* Ajusta este tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 10px;
 }
 
 .article p {
     font-size: 1em;
     line-height: 1.4;
-    color: #333; /* Color de texto */
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    color: #333;
+    margin-top: 10px; 
 }
 
 .rectangle { 
@@ -411,8 +411,7 @@ nav {
 .article:hover {
     transform: translateY(-10px);
 }
-
-/* Sección de Preguntas FAQ´S */
+/*FAQ´S*/
 .faq {
     padding: 40px 20px;
     color: #ffffff; 
@@ -420,7 +419,6 @@ nav {
     max-width: 1200px;
     margin: 20px auto;
 }
-
 .faq h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -433,6 +431,8 @@ nav {
     margin-bottom: 40px;
     text-align: center;
 }
+
+/*Preguntas desplegables*/
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -448,10 +448,12 @@ nav {
     padding: 20px;
     text-align: left; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s, border-color 0.3s;
+    transition: max-heigth 0.3s, border-color 0.3 ease, transform 0.3s ease;
+    overflow: hidden;
+    max-height: 200px;
+}
+.faq-item.open { 
+    max-height: 500px;
 }
 .faq-item:hover {
     border-color: #f0c26c;
@@ -464,10 +466,13 @@ nav {
 }
 .faq-answer {
     margin-top: 10px;
-    display: none; /* Oculta inicialmente */
+    display: none;
 }
 .faq-item.open .faq-answer {
-    display: block; /* Muestra la respuesta cuando se expande */
+    display: block; 
+}
+.faq-item.open button {
+    margin-top: 10px; 
 }
 .faq-item button {
     align-self: flex-start; 
