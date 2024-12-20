@@ -19,6 +19,7 @@ header {
     align-items: center;
     justify-content: space-between; 
     padding: 0 15px;
+    position: relative;
 }
 .logo {
     height: 50px; 
@@ -29,6 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 1.5rem;
+    z-index: 2;
 }
 .menu {
     list-style: none; 
@@ -76,6 +78,12 @@ nav {
 .menu li:hover::before {
     opacity: 1; 
     background-position: 100% 50%; 
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
 }
 /*DEBAJO DEL NAV*/
 /*IMAGEN DE FONDO*/
@@ -564,8 +572,97 @@ footer {
 .footer-bottom p { 
     margin-left: auto;
 }
-/* Estilos responsivos */
+/* Phones Responsives */
 @media (max-width: 768px) {
+    html, body {
+        margin: 0; /* Elimina márgenes por defecto */
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        padding: 30px;
+        z-index: 5;
+    }
+    .logo {
+        width: 170px;
+        height: 40px;
+        margin-left: 20%;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #273037;
+        gap: 1rem;
+        font-size: 1rem;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 120%;
+        left: 0; 
+        padding: 2rem 0;
+    }
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu.open {
+        display: flex;
+    }
+    .imagen-blanca-con-lineas img{
+        display: flex;
+        flex-direction: column; /* Acomoda los elementos en columna */
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Alinea desde arriba */
+        width: 100%;
+        height: 300px; /* Espaciado en los lados */
+    }
+    .recuadro-blanco{
+        padding: 10px;
+        text-align: center; /* Centra el contenido */
+    }
+    .recuadro-blanco .logo-dorado {
+        width: 100px; /* Hace la imagen más chica */
+         /* Máximo tamaño para la imagen */
+        height: auto;
+        margin: 0 auto; /* Centra la imagen y agrega espacio abajo */
+        display: block;
+    }
+
+    .background-azul {
+        color: #fff; /* Texto blanco */
+        width: 100%; /* Ocupa todo el ancho */
+        text-align: center; /* Centra el texto */
+        margin-top: 2000px ;
+        padding: 20px; /* Ajusta el espacio interno */
+        background-color: #273037; /* Color de fondo */
+    }
+
+    .background-azul h2 {
+        font-size: 1.5rem; /* Tamaño de fuente adecuado para móviles */
+        margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    }
+
+    .background-azul p {
+        font-size: 1rem; /* Tamaño de fuente del párrafo */
+        line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+    }
+
+
+    
+    .recuadros-inferiores{
+        display: none;
+    }
+    .recuadro-inferior{
+        display: none;
+    }
+
+    .city-image{
+        padding-top: 100000px;
+    }
+   
     .footer-container {
         flex-direction: column;
         align-items: center;

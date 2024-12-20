@@ -21,6 +21,9 @@
                     <li><a href="#servicios">Servicios</a></li>
                 </ul>
             </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
         </div>
     </header>
     <main>
@@ -183,4 +186,10 @@
     </div>
 </footer>
     </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </html>

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #273037; /* Color de fondo */
+    width: 100%;
+    position: fixed; /* Fija el header arriba */
+    padding: 10px;
+    z-index: 1000; /* Se mantiene por encima del resto */
+}
+/*NAV*/
+.container-header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y el menú */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Espaciado interno */
+}
+.logo {
+    width: 170px;
+    height: 40px;
+    margin-left: 20%;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #273037;
+    gap: 1rem;
+    font-size: 1.3rem;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 0; 
+    padding: 10px;
+}
+.menu li {
+    width: 100%;
+    text-align: center;
+}
+.menu li a {
+    color: whitesmoke; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    display: block;
+    padding: 10px 0; /* Espaciado interno */
+    transition: background 0.3s ease; /* Transición suave */
+}
+.hamburger {
+    display: block;
+    font-size: 24px; /* Tamaño del ícono */
+    cursor: pointer; /* Cursor tipo puntero */
+    color: whitesmoke; /* Color del ícono */
+}
+.menu.open {
+    display: flex;
+}
+.imagen-blanca-con-lineas {
+    background-size: cover; /* Hace que el fondo cubra toda la sección */
+    background-position: center; /* Centra el fondo */
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.imagen-blanca-con-lineas img {
+    width: 100%; /* Hace que la imagen de fondo ocupe toda la sección */
+    height: 315%; /* Hace que la imagen de fondo ocupe toda la altura */
+    object-fit: cover;
+     /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction:row;
+    position: absolute; /* Posiciona el contenido de la hero sobre la imagen de fondo */
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    z-index: 1; /* Asegura que el contenido del hero esté encima del fondo */
+}
+.background-azul {
+    background-color: transparent; /* Fondo transparente */
+    padding: 30px; /* Espaciado interno */
+    margin: 0; /* Elimina márgenes externos */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    box-shadow: -4px 0px 6px #273037;
+    text-align: left;
+    width: calc(100% - 20px);
+}
+.background-azul h2 {
+    font-size: 3rem; /* Tamaño del título */
+    font-weight: bold; /* Resalta el título */
+    background: linear-gradient(135deg, #d4af37, #f0c26c); /* Degradado dorado */
+    -webkit-background-clip: text; /* Aplica el degradado al texto */
+    -webkit-text-fill-color: transparent; /* Hace visible el degradado */
+    margin-bottom: 30px;
+    padding-right: 120px; /* Espaciado inferior */
+    text-align: center;/* Alinea el título a la izquierda */
+}
+.background-azul p {
+    font-size: 1.25rem; /* Tamaño del texto */
+    line-height: 1.8; /* Mejora la legibilidad */
+    color: black; /* Color del texto */
+    margin: 0 10px; /* Añade margen lateral */
+    text-align: justify; /* Alinea el texto de forma justificada */
+    width: calc(100% - 20px);
+}
+.recuadro-blanco {
+    display: none
+}
+.city-image{
+    margin-top: 700px;
+    position: relative;
+}
+.background {
+    width: 100%; /* Asegura que el contenedor tenga el tamaño completo */
+    height: 100vh; /* Ajusta la altura si lo necesitas */
+    position: relative; /* Para que los elementos dentro de él puedan posicionarse en relación a él */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+.background img {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Mueve la imagen hacia la izquierda para cortar la mitad */
+    width: 200%; /* Aumenta el tamaño de la imagen para poder cortarla */
+    height: auto; /* Ajusta la altura según el ancho */
+}
+.info-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center;
+    pointer-events: none; /* Para que no interfiera con los clics en los botones */
+}
+.buttons {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en una columna */
+    align-items: center; /* Centra los botones */
+    justify-content: center; /* Espacia los botones verticalmente */
+    height: 50%;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto; /* Permite que los botones sean clickeables */
+    margin: 10px 0; /* Permite que los botones sean clickeables */
+}
+.button img{
+    width: 25%;
+    height: auto;
+}
+.button p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 8px;
+    color: whitesmoke;
+    font-size: bold;
+}
+.circle-image{
+    display: none;
+}
