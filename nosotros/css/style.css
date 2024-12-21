@@ -41,7 +41,7 @@ nav {
     display: inline-block;
     position: relative; 
 }
-.menu li a {
+.menu a li {
     text-decoration: none; 
     color: #ffffff; 
     font-family: "Montserrat", sans-serif;
